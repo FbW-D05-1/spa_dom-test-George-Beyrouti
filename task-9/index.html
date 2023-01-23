@@ -10,6 +10,20 @@
     </p>
     <script>
       // ???
+
+      const Par = document.querySelector("p");
+
+      const prompting = () => {
+        let user = window.prompt("Please enter your name");
+
+        if (user === null || user.length === 0) {
+          prompting();
+        } else {
+          Par.innerText = ` Hello ${user}!  `;
+        }
+      };
+
+      onload(prompting());
     </script>
   </body>
 </html>

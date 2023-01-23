@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 7</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 7</title>
-    </head>
+  <body>
+    <p>Input radius value and get the volume of a sphere.</p>
+    <form action="https://ddg.gg/" method="post" id="MyForm">
+      <label for="radius">Radius</label>
+      <input type="text" name="radius" id="radius" required />
+      <button>Calculate volume</button>
+    </form>
 
-    <body>
-        <p>Input radius value and get the volume of a sphere.</p>
-        <form action="https://ddg.gg/" method="post" id="MyForm">
-            <label for="radius">Radius</label>
-            <input type="text" name="radius" id="radius" required>
-            <button>Calculate volume</button>
-        </form>
+    <script>
+      // ???
 
-        <script>
-            // ???
-        </script>
-    </body>
 
+    let form = document.getElementById("MyForm");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+       
+
+        let radius = document.getElementById("radius").value;
+
+        let volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+        volume = volume.toFixed(4);
+        console.log(volume);
+
+        alert(volume);
+      });
+    </script>
+  </body>
 </html>
