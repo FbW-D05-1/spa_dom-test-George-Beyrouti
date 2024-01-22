@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 1</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 1</title>
-    </head>
+  <body>
+    <p id="text">Lorem ipsum...</p>
+    <button id="styler">Style</button>
 
-    <body>
-        <p id="text">Lorem ipsum...</p>
-        <button id="styler">Style</button>
+    <script>
+      // ???
 
-        <script>
-            // ???
-        </script>
-    </body>
+      const textP = document.getElementById("text");
 
+      const styleBtn = document.getElementById("styler");
+
+      styleBtn.addEventListener("click", () => {
+        textP.style = "color: red; font-size: 30px; font-family: Impact;  ";
+      });
+    </script>
+  </body>
 </html>
